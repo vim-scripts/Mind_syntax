@@ -1,0 +1,29 @@
+Overview
+========
+
+This vim plugin add syntax coloration for mind files:
+
+ - adl,idt,itf files: there are an extension of idl files. idl syntax is already defined in vim package. We only extend this syntax. We also link adl, itf, idt extension with idl syntax.
+ - cpl files: these are implementation files of components. They are C files, with some added keywords. We check if some keywordds are present with Mind_or_SimpleC function (loaded for each C file). If it is the case, we extend C syntax coloration with defined keywords.
+
+Script files
+============
+
+./ftdetect/mind.vim : 
+    set idl filetype for files with adl, idt and itf extension
+./after/syntax/idl/mind.vim :
+    extend idl syntax with mind syntax
+./after/syntax/c/mind.vim
+    extend C syntax for CPT files
+./ftplugin/c/mind.vim
+    check at opening of C file if there are Mind keywords in 100 first lines
+
+Install
+=======
+
+untar this tarball in 
+
+for Linux:
+  $HOME/.vim
+for Windows:
+  $VIMRUNTIME/

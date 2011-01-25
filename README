@@ -1,0 +1,9 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=3421
+
+This script adds syntax for Mind component files: adl, idt, itf and c source files.
+
+From http://mind.ow2.org/
+
+MIND is an implementation of the Fractal component model for the development of embedded softwares It provides an architecture compilation tool-chain, a component library and an integrated development environment based on Eclipse. 
+
+This script is based on Karthick Gururaj SystemC script: http://www.vim.org/scripts/script.php?script_id=835
